@@ -121,8 +121,8 @@
   bottom: 0;
   right: 0;
   border: 1px solid transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#051424), to(#051424)), -webkit-gradient(linear, left top, right top, from(#a7c5eb), color-stop(50%, #57508f));
-  background-image: linear-gradient(#051424, #051424), linear-gradient(90deg, #a7c5eb, #57508f 50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#040d17), to(#040d17)), -webkit-gradient(linear, left top, right top, from(#a7c5eb), color-stop(50%, #57508f));
+  background-image: linear-gradient(#040d17, #040d17), linear-gradient(90deg, #a7c5eb, #57508f 50%);
   background-clip: padding-box, border-box;
   background-repeat: repeat-x;
   background-size: calc(100% + 2px * 2) calc(100% + 2px * 2);
@@ -284,7 +284,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #051424;
+  background-color: #040d17;
   letter-spacing: 0;
 }
 
@@ -300,7 +300,7 @@ body {
 
 nav {
   height: 100px;
-  background-color: #051424 !important;
+  background-color: #040d17 !important;
   color: #a7c5eb !important;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -336,7 +336,7 @@ nav .divider {
 }
 
 nav .navbar-collapse {
-  background-color: #051424;
+  background-color: #040d17;
   z-index: 1;
   border-radius: 20px;
 }
