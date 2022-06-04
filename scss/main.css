@@ -121,8 +121,8 @@
   bottom: 0;
   right: 0;
   border: 1px solid transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#040d17), to(#040d17)), -webkit-gradient(linear, left top, right top, from(#a7c5eb), color-stop(50%, #57508f));
-  background-image: linear-gradient(#040d17, #040d17), linear-gradient(90deg, #a7c5eb, #57508f 50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)), -webkit-gradient(linear, left top, right top, from(#a7c5eb), color-stop(50%, #57508f));
+  background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #a7c5eb, #57508f 50%);
   background-clip: padding-box, border-box;
   background-repeat: repeat-x;
   background-size: calc(100% + 2px * 2) calc(100% + 2px * 2);
@@ -282,21 +282,9 @@
   }
 }
 
-.portfolio-desc {
-  font-size: 14px;
-  letter-spacing: 0.3px;
-  line-height: 26px;
-  color: white;
-  font-weight: 300;
-}
-
-.text-dark {
-  color: #201f1f !important;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #040d17;
+  background-color: #fff;
   letter-spacing: 0;
 }
 
@@ -312,7 +300,7 @@ body {
 
 nav {
   height: 100px;
-  background-color: #040d17 !important;
+  background-color: #fff !important;
   color: #a7c5eb !important;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -348,7 +336,7 @@ nav .divider {
 }
 
 nav .navbar-collapse {
-  background-color: #040d17;
+  background-color: #fff;
   z-index: 1;
   border-radius: 20px;
 }
@@ -506,12 +494,12 @@ section.portfolio .portfolio-container {
   height: 450px;
   border-radius: 20px;
   background: linear-gradient(322deg, #786ec2, #a7c5eb);
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-bottom: 24px;
-  padding-top: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
   -webkit-transition: 1s;
   transition: 1s;
+  cursor: pointer;
 }
 
 @media (max-width: 1400px) {
@@ -528,19 +516,7 @@ section.portfolio .portfolio-container {
 
 @media (max-width: 576px) {
   section.portfolio .portfolio-container {
-    height: 390px;
-  }
-}
-
-@media (max-width: 576px) {
-  section.portfolio .portfolio-container {
-    height: 390px;
-  }
-}
-
-@media (max-width: 362px) {
-  section.portfolio .portfolio-container {
-    height: 390px;
+    height: 300px;
   }
 }
 
@@ -567,21 +543,14 @@ section.portfolio .portfolio-container::before {
 section.portfolio .portfolio-container:hover {
   -webkit-animation: gradientRotate2 2s infinite;
           animation: gradientRotate2 2s infinite;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 section.portfolio .portfolio-container:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
           animation: gradientRotate2 2s infinite;
-}
-
-@media (min-width: 992px) {
-  section.portfolio .portfolio-container:hover {
-    margin-top: -10px;
-  }
-  section.portfolio .portfolio-container:hover .portfolio-overlay {
-    opacity: 1;
-  }
 }
 
 section.portfolio .portfolio-container:active {
@@ -595,74 +564,9 @@ section.portfolio .portfolio-container:active::before {
           animation: gradientRotate2 2s infinite;
 }
 
-@media (max-width: 992px) {
-  section.portfolio .portfolio-container:active {
-    margin-top: -10px;
-  }
-  section.portfolio .portfolio-container:active .portfolio-overlay {
-    opacity: 1;
-  }
-}
-
 section.portfolio .portfolio-container h3.sub-title {
   color: #fff;
-}
-
-section.portfolio .portfolio-container .portfolio-thumbnail {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 65%;
-  position: absolute;
-}
-
-section.portfolio .portfolio-container .portfolio-caption {
-  position: relative;
-  bottom: -68%;
-}
-
-@media (max-width: 362px) {
-  section.portfolio .portfolio-container .portfolio-caption p.portfolio-desc {
-    font-size: 12px;
-  }
-}
-
-section.portfolio .portfolio-container div.portfolio-thumbnail.homy {
-  background-image: url(../img/homy-img/hero-section.png) !important;
-  background-size: cover;
-}
-
-section.portfolio .portfolio-container .portfolio-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding-left: 30px;
-  background-color: rgba(167, 197, 235, 0.7);
-  border-radius: 20px;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-section.portfolio .portfolio-container .portfolio-overlay .portfolio-overlay-content a {
-  color: white;
-  text-decoration: none;
-}
-
-section.portfolio .portfolio-container .portfolio-overlay .portfolio-overlay-content a:hover {
-  text-decoration: underline;
-}
-
-section.portfolio .portfolio-container .portfolio-overlay .portfolio-overlay-content a h3.sub-title {
-  color: #fff;
-  opacity: inherit;
-  z-index: 1;
-  font-weight: 600;
+  opacity: 50%;
 }
 
 section.skills {
@@ -770,7 +674,6 @@ section.skills .skills-container .icon-container img {
 }
 
 section.contact {
-  background-color: #040d17;
   padding-top: 100px;
   padding-bottom: 200px;
 }
@@ -862,71 +765,5 @@ section.contact .social-container a:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
           animation: gradientRotate2 2s infinite;
-}
-
-body.portfolio-page {
-  background-color: #fff !important;
-}
-
-section.portfolio-detail {
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
-
-section.portfolio-detail h2.portfolio-title {
-  color: #201f1f;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-section.portfolio-detail h4.sub-title {
-  font-weight: 700 !important;
-  color: #201f1f;
-}
-
-section.portfolio-detail h6.sub-sub-title {
-  font-weight: 700;
-  color: #201f1f;
-}
-
-section.portfolio-detail section.content {
-  margin-bottom: 50px;
-}
-
-section.portfolio-detail section.content img.portfolio-banner {
-  margin-bottom: 50px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-section.portfolio-detail section.content img.portfolio-banner:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-}
-
-section.portfolio-detail section.content img.portfolio-banner.small {
-  max-width: 300px;
-}
-
-section.portfolio-detail section.content p {
-  font-weight: 500;
-  color: #8d8d8d;
-  margin-bottom: 10px;
-}
-
-section.portfolio-detail section.content p.ket {
-  margin-bottom: 3px;
-}
-
-section.portfolio-detail section.content figcaption {
-  font-style: italic;
-  margin-top: -20px;
-}
-
-section.portfolio-detail section.content span.homy {
-  color: #2a9ea4;
 }
 /*# sourceMappingURL=main.css.map */

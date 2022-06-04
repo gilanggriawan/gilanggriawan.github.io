@@ -1,0 +1,364 @@
+// Home Style
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $BackgroundColor;
+  letter-spacing: 0;
+}
+
+.container {
+  @media (max-width: 992px) {
+    margin-top: 10px !important;
+  }
+  @media (max-width: 576px) {
+  }
+  padding: 0 0px;
+}
+
+// Navbar
+
+nav {
+  @media (max-width: 576px) {
+    margin: 0 20px;
+  }
+  height: 100px;
+  background-color: $BackgroundColor !important;
+  color: $SecondaryColor !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  .navbar-brand {
+    span {
+      & {
+        margin-left: 10px;
+      }
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 2px !important;
+    }
+  }
+
+  .divider {
+    @media (max-width: 992px) {
+      display: none;
+    }
+    margin-left: 30px;
+    height: 20px;
+    width: 1px;
+    background-color: $SubTextColor;
+  }
+
+  .navbar-collapse {
+    @media (max-width: 992px) {
+      margin-top: 16px;
+      padding-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    background-color: $BackgroundColor;
+    z-index: 1;
+    border-radius: 20px;
+
+    .navbar-nav {
+      @media (max-width: 992px) {
+        margin-left: inherit;
+        padding: 0 0 10px !important;
+      }
+      margin-left: 30px;
+      .nav-link {
+        &:hover {
+          color: $TextColor;
+        }
+
+        &:active {
+          color: $TextColor;
+        }
+
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        color: rgb(194, 194, 194);
+        margin-right: 30px;
+        transition: 0.5s;
+      }
+    }
+    .cta {
+      @media (max-width: 992px) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+// Hero
+
+section.hero {
+  margin-top: 150px;
+}
+
+section.hero .hero-container {
+  @media (max-width: 1200px) {
+    height: 420px;
+  }
+  @media (max-width: 992px) {
+    height: 330px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+    height: 280px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+    background-size: 500%;
+    background-position: 0% 0%;
+    filter: blur(10px);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s;
+  }
+  &:hover {
+    animation: gradientRotate2 2s infinite;
+    &::before {
+      opacity: 1;
+      animation: gradientRotate2 2s infinite;
+    }
+  }
+  &:active {
+    animation: gradientRotate2 2s infinite;
+    &::before {
+      opacity: 1;
+      animation: gradientRotate2 2s infinite;
+    }
+  }
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(322deg, rgb(120, 110, 194), rgba(167, 197, 235, 1));
+  border-radius: 20px;
+  position: relative;
+  transition: 1s;
+  cursor: pointer;
+  img {
+    @media (max-width: 1200px) {
+      left: -32px;
+      width: 116%;
+    }
+    @media (max-width: 992px) {
+      width: 110%;
+      left: -16px;
+    }
+    position: absolute;
+    bottom: 0;
+    left: -36px;
+    width: 115%;
+    transition: 0.5s;
+  }
+}
+
+// Portfolio
+
+section.portfolio {
+  padding-top: 150px;
+
+  .portfolio-container {
+    @media (max-width: 1400px) {
+      height: 450px;
+    }
+    @media (max-width: 992px) {
+      height: 400px;
+    }
+    @media (max-width: 576px) {
+      height: 390px;
+    }
+    @media (max-width: 576px) {
+      height: 390px;
+    }
+    @media (max-width: 362px) {
+      height: 390px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 10px;
+      background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+      background-size: 500%;
+      background-position: 0% 0%;
+      filter: blur(10px);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.5s;
+    }
+    &:hover {
+      animation: gradientRotate2 2s infinite;
+      &::before {
+        opacity: 1;
+        animation: gradientRotate2 2s infinite;
+      }
+      @media (min-width: 992px) {
+        margin-top: -10px;
+        .portfolio-overlay {
+          opacity: 1;
+        }
+      }
+    }
+    &:active {
+      animation: gradientRotate2 2s infinite;
+      &::before {
+        opacity: 1;
+        animation: gradientRotate2 2s infinite;
+      }
+      @media (max-width: 992px) {
+        margin-top: -10px;
+        .portfolio-overlay {
+          opacity: 1;
+        }
+      }
+    }
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    background: linear-gradient(322deg, rgb(120, 110, 194), rgba(167, 197, 235, 1));
+    margin-bottom: 24px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 1s;
+    h3.sub-title {
+      color: $TextColor;
+    }
+    .portfolio-thumbnail {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 65%;
+      position: absolute;
+    }
+    .portfolio-caption {
+      position: relative;
+      bottom: -68%;
+      p.portfolio-desc {
+        @media (max-width: 362px) {
+          font-size: 12px;
+        }
+      }
+    }
+    div.portfolio-thumbnail.homy {
+      background-image: url(../img/homy-img/hero-section.png) !important;
+      background-size: cover;
+    }
+    .portfolio-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding-left: 30px;
+      background-color: rgba(167, 197, 235, 0.7);
+      border-radius: 20px;
+      opacity: 0;
+      transition: 0.5s;
+      .portfolio-overlay-content {
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+          color: white;
+          text-decoration: none;
+          h3.sub-title {
+            color: $TextColor;
+            opacity: inherit;
+            z-index: 1;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tools and Skills
+
+section.skills {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  .skills-container {
+    @media (max-width: 1200px) {
+      height: 150px;
+    }
+    @media (max-width: 992px) {
+      height: 120px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 10px;
+      background-image: linear-gradient(90deg, #0065ff, #6942ef, #6554c0, #008cff, #0065ff, #6942ef);
+      background-size: 500%;
+      background-position: 0% 0%;
+      filter: blur(10px);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.5s;
+    }
+    &:hover {
+      animation: gradientRotate2 2s infinite;
+      &::before {
+        opacity: 1;
+        animation: gradientRotate2 2s infinite;
+      }
+    }
+    &:active {
+      animation: gradientRotate2 2s infinite;
+      &::before {
+        opacity: 1;
+        animation: gradientRotate2 2s infinite;
+      }
+    }
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(322deg, rgb(120, 110, 194), rgba(167, 197, 235, 1));
+    border-radius: 10px;
+    margin-bottom: 24px;
+    transition: 1s;
+    .icon-container {
+      width: 100px;
+      height: 100px;
+      img {
+        @media (max-width: 1200px) {
+          max-width: 70%;
+        }
+        @media (max-width: 992px) {
+          max-width: 50%;
+        }
+        max-width: 100%;
+      }
+      img.figma-icon {
+        @media (max-width: 992px) {
+          max-width: 40%;
+        }
+      }
+    }
+    .sub-title {
+      @media (max-width: 992px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
