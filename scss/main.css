@@ -65,7 +65,7 @@
   background-size: 500%;
   background-position: 0% 0%;
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 0.5s;
@@ -74,24 +74,24 @@
 
 .btn-primary:hover {
   -webkit-animation: gradientRotate 2s infinite;
-          animation: gradientRotate 2s infinite;
+  animation: gradientRotate 2s infinite;
 }
 
 .btn-primary:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate 2s infinite;
-          animation: gradientRotate 2s infinite;
+  animation: gradientRotate 2s infinite;
 }
 
 .btn-primary:active {
   -webkit-animation: gradientRotate 2s infinite;
-          animation: gradientRotate 2s infinite;
+  animation: gradientRotate 2s infinite;
 }
 
 .btn-primary:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate 2s infinite;
-          animation: gradientRotate 2s infinite;
+  animation: gradientRotate 2s infinite;
 }
 
 .btn-secondary {
@@ -100,7 +100,7 @@
   display: block;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid transparent;
   background-color: transparent;
   background-clip: padding-box;
@@ -144,9 +144,9 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a7c5eb), color-stop(80%, #9185e1));
   background-image: linear-gradient(180deg, #a7c5eb, #9185e1 80%);
   -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
   -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
@@ -160,7 +160,7 @@
 
 .btn-secondary:hover::after {
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .btn-secondary:hover span {
@@ -177,7 +177,7 @@
 
 .btn-secondary:active::after {
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .btn-secondary span {
@@ -303,7 +303,7 @@ nav {
   background-color: #fff !important;
   color: #a7c5eb !important;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 576px) {
@@ -346,7 +346,7 @@ nav .navbar-collapse {
     margin-top: 16px;
     padding-bottom: 30px;
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -432,7 +432,7 @@ section.hero .hero-container::before {
   background-size: 500%;
   background-position: 0% 0%;
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 0.5s;
@@ -441,24 +441,24 @@ section.hero .hero-container::before {
 
 section.hero .hero-container:hover {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.hero .hero-container:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.hero .hero-container:active {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.hero .hero-container:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.hero .hero-container img {
@@ -495,7 +495,7 @@ section.portfolio .portfolio-container {
   border-radius: 20px;
   background: linear-gradient(322deg, #786ec2, #a7c5eb);
   -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   margin-bottom: 24px;
   -webkit-transition: 1s;
   transition: 1s;
@@ -533,7 +533,7 @@ section.portfolio .portfolio-container::before {
   background-size: 500%;
   background-position: 0% 0%;
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 0.5s;
@@ -542,26 +542,26 @@ section.portfolio .portfolio-container::before {
 
 section.portfolio .portfolio-container:hover {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 section.portfolio .portfolio-container:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.portfolio .portfolio-container:active {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.portfolio .portfolio-container:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.portfolio .portfolio-container h3.sub-title {
@@ -611,7 +611,7 @@ section.skills .skills-container::before {
   background-size: 500%;
   background-position: 0% 0%;
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 0.5s;
@@ -620,24 +620,24 @@ section.skills .skills-container::before {
 
 section.skills .skills-container:hover {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.skills .skills-container:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.skills .skills-container:active {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.skills .skills-container:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.skills .skills-container .icon-container {
@@ -738,7 +738,7 @@ section.contact .social-container a::before {
   background-size: 500%;
   background-position: 0% 0%;
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+  filter: blur(10px);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 0.5s;
@@ -747,23 +747,23 @@ section.contact .social-container a::before {
 
 section.contact .social-container a:hover {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.contact .social-container a:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.contact .social-container a:active {
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 
 section.contact .social-container a:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
-          animation: gradientRotate2 2s infinite;
+  animation: gradientRotate2 2s infinite;
 }
 /*# sourceMappingURL=main.css.map */

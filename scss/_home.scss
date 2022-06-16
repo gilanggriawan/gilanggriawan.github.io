@@ -197,6 +197,9 @@ section.portfolio {
     }
     &:hover {
       animation: gradientRotate2 2s infinite;
+      .category-label {
+        opacity: 0;
+      }
       &::before {
         opacity: 1;
         animation: gradientRotate2 2s infinite;
@@ -216,6 +219,9 @@ section.portfolio {
     }
     &:active {
       animation: gradientRotate2 2s infinite;
+      .category-label {
+        opacity: 0;
+      }
       &::before {
         opacity: 1;
         animation: gradientRotate2 2s infinite;
@@ -233,6 +239,20 @@ section.portfolio {
     transition: 1s;
     h3.sub-title {
       color: $TextColor;
+    }
+    .category-label {
+      position: absolute;
+      right: 30px;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 10px;
+      transition: 0.5s;
+      span {
+        color: #fff;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+        font-weight: 600;
+      }
     }
     .portfolio-thumbnail {
       border-top-left-radius: 20px;
@@ -255,6 +275,10 @@ section.portfolio {
     }
     div.portfolio-thumbnail.homy {
       background-image: url(../img/homy-img/hero-section.png) !important;
+      background-size: cover;
+    }
+    div.portfolio-thumbnail.foodious {
+      background-image: url(../img/foodious-img/foodious-mockup.jpg) !important;
       background-size: cover;
     }
     .portfolio-overlay {

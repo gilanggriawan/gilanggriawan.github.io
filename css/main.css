@@ -565,6 +565,10 @@ section.portfolio .portfolio-container:hover {
           animation: gradientRotate2 2s infinite;
 }
 
+section.portfolio .portfolio-container:hover .category-label {
+  opacity: 0;
+}
+
 section.portfolio .portfolio-container:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
@@ -594,6 +598,10 @@ section.portfolio .portfolio-container:active {
           animation: gradientRotate2 2s infinite;
 }
 
+section.portfolio .portfolio-container:active .category-label {
+  opacity: 0;
+}
+
 section.portfolio .portfolio-container:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
@@ -602,6 +610,23 @@ section.portfolio .portfolio-container:active::before {
 
 section.portfolio .portfolio-container h3.sub-title {
   color: #fff;
+}
+
+section.portfolio .portfolio-container .category-label {
+  position: absolute;
+  right: 30px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.portfolio .portfolio-container .category-label span {
+  color: #fff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
 }
 
 section.portfolio .portfolio-container .portfolio-thumbnail {
@@ -628,6 +653,11 @@ section.portfolio .portfolio-container .portfolio-caption {
 
 section.portfolio .portfolio-container div.portfolio-thumbnail.homy {
   background-image: url(../img/homy-img/hero-section.png) !important;
+  background-size: cover;
+}
+
+section.portfolio .portfolio-container div.portfolio-thumbnail.foodious {
+  background-image: url(../img/foodious-img/foodious-mockup.jpg) !important;
   background-size: cover;
 }
 
@@ -917,6 +947,10 @@ section.portfolio-detail section.content p.ket {
   margin-bottom: 3px;
 }
 
+section.portfolio-detail section.content p a {
+  text-decoration: none !important;
+}
+
 section.portfolio-detail section.content figcaption {
   font-style: italic;
   margin-top: -20px;
@@ -924,5 +958,14 @@ section.portfolio-detail section.content figcaption {
 
 section.portfolio-detail section.content span.homy {
   color: #2a9ea4;
+}
+
+section.portfolio-detail section.content span.foodious {
+  color: #632626;
+}
+
+section.portfolio-detail section.content span.bold {
+  font-weight: 600;
+  color: #333;
 }
 /*# sourceMappingURL=main.css.map */

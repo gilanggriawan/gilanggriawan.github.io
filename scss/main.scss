@@ -89,6 +89,9 @@ section.portfolio-detail {
       &.ket {
         margin-bottom: 3px;
       }
+      a {
+        text-decoration: none !important;
+      }
     }
     figcaption {
       font-style: italic;
@@ -97,5 +100,14 @@ section.portfolio-detail {
     span.homy {
       color: #2a9ea4;
     }
+    span.foodious {
+      color: #632626;
+    }
+    span.bold {
+      font-weight: 600;
+      color: #333;
+    }
   }
 }
+
+// Foodious
