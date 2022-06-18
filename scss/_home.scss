@@ -67,8 +67,8 @@ nav {
           color: $TextColor;
         }
 
-        &:active {
-          color: $TextColor;
+        &.active {
+          color: #fff;
         }
 
         font-size: 14px;
@@ -215,12 +215,14 @@ section.portfolio {
         margin-top: -10px;
         .portfolio-overlay {
           opacity: 1;
+          display: inherit;
         }
       }
       @media (max-width: 992px) {
         margin-top: -10px;
         .portfolio-overlay {
           opacity: 1;
+          display: inherit;
         }
       }
     }
@@ -274,6 +276,12 @@ section.portfolio {
     .portfolio-caption {
       position: relative;
       bottom: -68%;
+      .portfolio-title {
+        // height: 26px;
+        // overflow: hidden;
+        // display: -webkit-box;
+        // -webkit-box-orient: horizontal;
+      }
       p.portfolio-desc {
         @media (max-width: 362px) {
           font-size: 12px;
@@ -298,6 +306,7 @@ section.portfolio {
       background-color: rgba(167, 197, 235, 0.7);
       border-radius: 20px;
       opacity: 0;
+      display: none;
       transition: 0.5s;
       .portfolio-overlay-content {
         a {

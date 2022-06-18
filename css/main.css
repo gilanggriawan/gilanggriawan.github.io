@@ -383,7 +383,7 @@ nav .navbar-collapse .navbar-nav .nav-link:hover {
   color: #fff;
 }
 
-nav .navbar-collapse .navbar-nav .nav-link:active {
+nav .navbar-collapse .navbar-nav .nav-link.active {
   color: #fff;
 }
 
@@ -585,6 +585,7 @@ section.portfolio .portfolio-container:hover::before {
   }
   section.portfolio .portfolio-container:hover .portfolio-overlay {
     opacity: 1;
+    display: inherit;
   }
 }
 
@@ -594,6 +595,7 @@ section.portfolio .portfolio-container:hover::before {
   }
   section.portfolio .portfolio-container:hover .portfolio-overlay {
     opacity: 1;
+    display: inherit;
   }
 }
 
@@ -675,6 +677,7 @@ section.portfolio .portfolio-container .portfolio-overlay {
   background-color: rgba(167, 197, 235, 0.7);
   border-radius: 20px;
   opacity: 0;
+  display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
