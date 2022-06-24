@@ -296,6 +296,15 @@ section.portfolio {
       background-image: url(../img/foodious-img/foodious-mockup.jpg) !important;
       background-size: cover;
     }
+    div.portfolio-thumbnail.hefa {
+      background-image: url(../img/hefa.png) !important;
+      background-size: cover;
+      background-position-x: -50px;
+    }
+    div.portfolio-thumbnail.food {
+      background-image: url(../img/food.png) !important;
+      background-size: cover;
+    }
     .portfolio-overlay {
       position: absolute;
       top: 0;

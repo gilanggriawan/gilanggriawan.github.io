@@ -667,6 +667,17 @@ section.portfolio .portfolio-container div.portfolio-thumbnail.foodious {
   background-size: cover;
 }
 
+section.portfolio .portfolio-container div.portfolio-thumbnail.hefa {
+  background-image: url(../img/hefa.png) !important;
+  background-size: cover;
+  background-position-x: -50px;
+}
+
+section.portfolio .portfolio-container div.portfolio-thumbnail.food {
+  background-image: url(../img/food.png) !important;
+  background-size: cover;
+}
+
 section.portfolio .portfolio-container .portfolio-overlay {
   position: absolute;
   top: 0;
