@@ -503,13 +503,14 @@ section.portfolio {
 section.portfolio .portfolio-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  min-height: 600px;
   border-radius: 20px;
   background: linear-gradient(322deg, #786ec2, #a7c5eb);
   margin-bottom: 24px;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 20px;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -616,10 +617,12 @@ section.portfolio .portfolio-container:active::before {
 
 section.portfolio .portfolio-container h3.sub-title {
   color: #fff;
+  line-height: 32px;
 }
 
 section.portfolio .portfolio-container .category-label {
   position: absolute;
+  top: 30px;
   right: 30px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.1);
@@ -675,6 +678,11 @@ section.portfolio .portfolio-container div.portfolio-thumbnail.hefa {
 
 section.portfolio .portfolio-container div.portfolio-thumbnail.food {
   background-image: url(../img/food.png) !important;
+  background-size: cover;
+}
+
+section.portfolio .portfolio-container div.portfolio-thumbnail.dgslink {
+  background-image: url(../img/dgslink-banner.png) !important;
   background-size: cover;
 }
 
@@ -980,6 +988,10 @@ section.portfolio-detail section.content span.homy {
 
 section.portfolio-detail section.content span.foodious {
   color: #632626;
+}
+
+section.portfolio-detail section.content span.dgslink {
+  color: #ff6600;
 }
 
 section.portfolio-detail section.content span.bold {

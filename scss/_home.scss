@@ -238,19 +238,22 @@ section.portfolio {
     }
     position: relative;
     width: 100%;
-    height: 450px;
+    min-height: 600px;
     border-radius: 20px;
     background: linear-gradient(322deg, rgb(120, 110, 194), rgba(167, 197, 235, 1));
     margin-bottom: 24px;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
     transition: 1s;
     h3.sub-title {
       color: $TextColor;
+      line-height: 32px;
     }
     .category-label {
       position: absolute;
+      top: 30px;
       right: 30px;
       z-index: 1;
       background-color: rgba(0, 0, 0, 0.1);
@@ -303,6 +306,10 @@ section.portfolio {
     }
     div.portfolio-thumbnail.food {
       background-image: url(../img/food.png) !important;
+      background-size: cover;
+    }
+    div.portfolio-thumbnail.dgslink {
+      background-image: url(../img/dgslink-banner.png) !important;
       background-size: cover;
     }
     .portfolio-overlay {
