@@ -682,7 +682,12 @@ section.portfolio .portfolio-container div.portfolio-thumbnail.food {
 }
 
 section.portfolio .portfolio-container div.portfolio-thumbnail.dgslink {
-  background-image: url(../img/dgslink-banner.png) !important;
+  background-image: url(../img/dgslink-img/mockup-1.png) !important;
+  background-size: cover;
+}
+
+section.portfolio .portfolio-container div.portfolio-thumbnail.emas {
+  background-image: url(../img/emas-img/mockup-1.png) !important;
   background-size: cover;
 }
 
@@ -992,6 +997,10 @@ section.portfolio-detail section.content span.foodious {
 
 section.portfolio-detail section.content span.dgslink {
   color: #ff6600;
+}
+
+section.portfolio-detail section.content span.emas {
+  color: #feca42;
 }
 
 section.portfolio-detail section.content span.bold {
