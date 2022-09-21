@@ -826,39 +826,39 @@ section.skills .skills-container .icon-container img {
   }
 }
 
-section.contact {
+footer.contact {
   background-color: #040d17;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-section.contact h1.title {
+footer.contact h1.title {
   margin-bottom: 16px;
 }
 
-section.contact h4 {
+footer.contact h4 {
   color: #ababab;
   font-size: 22px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 992px) {
-  section.contact h4 {
+  footer.contact h4 {
     font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
-  section.contact h4 {
+  footer.contact h4 {
     font-size: 16px;
   }
 }
 
-section.contact .cta {
+footer.contact .cta {
   margin-bottom: 30px;
 }
 
-section.contact .social-container {
+footer.contact .social-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,11 +875,11 @@ section.contact .social-container {
   gap: 20px;
 }
 
-section.contact .social-container a {
+footer.contact .social-container a {
   position: relative;
 }
 
-section.contact .social-container a::before {
+footer.contact .social-container a::before {
   content: "";
   position: absolute;
   left: -2px;
@@ -899,23 +899,23 @@ section.contact .social-container a::before {
   transition: opacity 0.5s;
 }
 
-section.contact .social-container a:hover {
+footer.contact .social-container a:hover {
   -webkit-animation: gradientRotate2 2s infinite;
           animation: gradientRotate2 2s infinite;
 }
 
-section.contact .social-container a:hover::before {
+footer.contact .social-container a:hover::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
           animation: gradientRotate2 2s infinite;
 }
 
-section.contact .social-container a:active {
+footer.contact .social-container a:active {
   -webkit-animation: gradientRotate2 2s infinite;
           animation: gradientRotate2 2s infinite;
 }
 
-section.contact .social-container a:active::before {
+footer.contact .social-container a:active::before {
   opacity: 1;
   -webkit-animation: gradientRotate2 2s infinite;
           animation: gradientRotate2 2s infinite;
