@@ -232,6 +232,10 @@
   line-height: 50px;
 }
 
+h1 span.blue-text {
+  color: #a7c5eb;
+}
+
 @media (max-width: 992px) {
   .title {
     font-size: 32px;
@@ -645,13 +649,13 @@ section.portfolio .portfolio-container .portfolio-thumbnail {
   right: 0;
   left: 0;
   width: 100%;
-  height: 65%;
+  height: 60%;
   position: absolute;
 }
 
 section.portfolio .portfolio-container .portfolio-caption {
   position: relative;
-  bottom: -68%;
+  bottom: -60%;
 }
 
 @media (max-width: 362px) {
@@ -689,6 +693,12 @@ section.portfolio .portfolio-container div.portfolio-thumbnail.dgslink {
 section.portfolio .portfolio-container div.portfolio-thumbnail.emas {
   background-image: url(../img/emas-img/mockup-1.png) !important;
   background-size: cover;
+}
+
+section.portfolio .portfolio-container div.portfolio-thumbnail.htm {
+  background-image: url(../img/htm.png) !important;
+  background-size: cover;
+  background-position: center center;
 }
 
 section.portfolio .portfolio-container .portfolio-overlay {
