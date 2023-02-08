@@ -701,6 +701,12 @@ section.portfolio .portfolio-container div.portfolio-thumbnail.htm {
   background-position: center center;
 }
 
+section.portfolio .portfolio-container div.portfolio-thumbnail.sejiwa {
+  background-image: url(../img/sejiwa.jpg) !important;
+  background-size: cover;
+  background-position: center center;
+}
+
 section.portfolio .portfolio-container .portfolio-overlay {
   position: absolute;
   top: 0;
