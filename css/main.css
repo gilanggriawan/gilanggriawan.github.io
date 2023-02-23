@@ -224,6 +224,39 @@
   opacity: 1;
 }
 
+/* Typing Effect */
+
+.typing-effect h1 {
+  overflow: hidden;
+}
+
+.typing-effect h1 span.typed-text {
+  color: #fff;
+}
+
+.typing-effect h1 span.cursor {
+  display: inline-block;
+  background-color: #fff;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.typing-effect h1 span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0%  { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #fff; }
+}
+
+
+  /* End of Typing effect */
+
 .title {
   font-size: 40px;
   font-weight: 700;
