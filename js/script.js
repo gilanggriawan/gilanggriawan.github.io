@@ -10,8 +10,8 @@ const popover = new bootstrap.Popover(".popover-dismiss", {
 
 // Typing Effect
 
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+const typedTextSpan = document.querySelectorAll(".typed-text");
+const cursorSpan = document.querySelectorAll(".cursor");
 
 const textArray = ["Wordpress Developer", "Web Designer"];
 const typingDelay = 200;
